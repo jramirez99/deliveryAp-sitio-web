@@ -1,0 +1,47 @@
+.login {
+    background-color: $primario;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.formulario-auth {
+    background-color: $blanco;
+    padding: 5rem;
+    max-width: 70rem;
+    margin: 0 auto;
+
+    h2 {
+        color: $blanco;
+        font-weight: 900;
+        padding: 1rem;
+        text-align: center;
+        background-color: $primario;
+    }
+    .campo {
+        margin-bottom: 2rem;
+
+        label {
+            font-size: 2rem;
+            font-weight: 700;
+            display: block;
+            margin: 1rem 0;
+        }
+        input:not([type="submit"]) {
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+
+    p {
+        text-align: center;
+        margin-top: 4rem;
+        color: $primario;
+        font-size: 1.6rem;
+
+        a {
+            color: $primario;
+            margin-left: 1rem;
+        }
+    }
+}

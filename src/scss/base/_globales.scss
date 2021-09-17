@@ -1,0 +1,62 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $fuente_principal;
+    font-size: 1.6rem;
+}
+.botones {
+    @include tablet {
+        display: flex;
+        gap: 4rem;
+        justify-content: space-between;
+    }
+
+    input, button {
+        @include boton( $primario, $blanco );
+    }
+    input {
+        margin-bottom: 2rem;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
+}
+p {
+    color: $negro;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    margin: 0 0 $separacion  0 ;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 3.2rem;
+}

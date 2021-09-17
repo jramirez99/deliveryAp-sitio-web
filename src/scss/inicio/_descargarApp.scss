@@ -1,0 +1,40 @@
+.descargar-app {
+    background-color: $grisClaro;
+    padding: 5rem;
+
+    img {
+        width: 30rem;
+    }
+}
+.descargar-grid {
+    @include tablet {
+        @include grid( 2, 2rem );
+    }
+
+    .imagen {
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .tiendas {
+        @include flexColumn;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    
+        @include tablet {
+            margin-top: 0;
+        }
+    
+        h2, p {
+            margin: 0;
+        }
+    
+        .iconos {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+    }
+}

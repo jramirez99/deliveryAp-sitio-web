@@ -1,0 +1,47 @@
+
+.login-restaurant {
+    background-color: $blanco;;
+    padding: 5rem 2rem;
+
+    .contenedor-grid {
+        height: 100vh;
+        @include tablet {
+            @include grid( 2, 5rem );
+            align-items: center;
+        }
+
+        .imagen {
+            margin-top: 5rem;
+
+            @include tablet {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.formulario-restaurant {
+    h2 {
+        color: $primario;
+        font-weight: 900;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 5rem;
+    }
+
+    .campo {
+        margin: 2rem 0;
+
+        label {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        input {
+            margin-top: 1rem;
+            padding: 1rem;
+            width: 100%;
+        }
+    }
+}

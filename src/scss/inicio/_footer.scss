@@ -1,0 +1,54 @@
+.footer {
+    background-color: $secundario;
+    padding: 5rem 0 00;
+
+    .footer-grid {
+        @include tablet {
+            @include grid( 2, 5rem );
+        }
+
+        .widget {
+            text-align: center;
+            margin-top: 5rem;
+
+            @include tablet {
+                text-align: left;
+            }
+
+            @include tablet {
+                margin-top: 0;
+            }
+            h3 {
+                color: $blanco;
+                margin: 0;
+            }
+            p {
+                color: $blanco;
+            }
+        }
+    }
+
+    .copyright {
+        background-color: $primario;
+        color: $blanco;
+        font-size: 1.7rem;
+        margin: 0;
+        margin-top: 2rem;
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+.sociales {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+
+    a {
+        i {
+            font-size: 4rem;
+            color: $blanco;
+            margin-top: 3rem;
+        }
+    }
+}

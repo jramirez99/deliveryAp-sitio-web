@@ -1,0 +1,16 @@
+.header {
+    @include flexColumn;
+    padding: 5rem 0;
+    align-items: center;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        img {
+            width: 30rem;
+        }
+    }
+}

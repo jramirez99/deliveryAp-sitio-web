@@ -1,0 +1,25 @@
+// base
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+@import 'base/normalize';
+@import 'base/utilidades';
+
+
+// header
+@import 'header/header';
+@import 'header/navegacion';
+
+// inicio
+@import 'inicio/formulario';
+@import 'inicio/comoFunciona';
+@import 'inicio/testimoniales';
+@import 'inicio/favoritos';
+@import 'inicio/repartidores';
+@import 'inicio/descargarApp';
+@import 'inicio/footer';
+
+// auth
+@import 'auth/formsAuth';
+@import 'auth/registrarRestaurant';
+

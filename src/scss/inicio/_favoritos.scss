@@ -1,0 +1,47 @@
+.favoritos {
+    background-color: $grisClaro;
+    padding: 5rem;
+
+    h2 {
+        color: $secundario;
+    }
+
+    .favoritos-grid {
+        @include laptop {
+            @include grid( 2, 4rem )
+        }
+    }
+}
+.favorito {
+    background-color: $blanco;
+    margin-bottom: 2rem;
+    padding: 4rem;
+
+    @include tablet {
+        margin-bottom: 0
+    }
+
+    .contenido {
+        @include tablet {
+            @include grid( 2, 3rem);
+            align-items: center;
+        }
+
+        .informacion {
+
+            .estrellas {
+                margin-top: 2rem;
+            }
+
+            .nombre {
+                color: $primario;
+                font-size: 3rem;
+                margin: 2rem 0;
+            }
+
+            .texto {
+                margin: 0;
+            }
+        }
+    }
+}

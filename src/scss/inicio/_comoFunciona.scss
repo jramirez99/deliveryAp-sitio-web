@@ -1,0 +1,40 @@
+.pasos {
+
+    .contenido {
+        background-color: $primario;
+        // esopara que nocree una separacion (linea blanca entre la onda y el div
+        margin-top: -1px;
+
+        h2 {
+            color: $blanco;
+            font-size: 3rem;
+            text-align: center;
+            
+            span {
+                display: block;
+                font-size: 1.8rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+}
+.pasos-grid {
+    
+    @include tablet {
+        @include grid( 3, 2rem )
+    }
+    
+    .paso {
+
+        img {
+            transition-property: transform;
+            transition-duration: .3s;
+
+            &:hover {
+                transform: scale(1.2) rotate(-4deg);
+            }
+        }
+        
+    }
+}

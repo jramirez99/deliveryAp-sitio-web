@@ -1,0 +1,30 @@
+.repartidores {
+    padding: 5rem 0;
+
+    h2 {
+        color: $secundario;
+    }
+
+    .repartidores-grid {
+
+        .imagen {
+            @include flexColumn;
+            justify-content: center;
+        }
+
+        @include tablet {
+            @include grid( 2, 5rem );
+        }
+
+        .informacion {
+
+            p {
+                color: $secundario;
+            }
+
+            a {
+                @include boton( $primario, $blanco )
+            }
+        }
+    } 
+}
